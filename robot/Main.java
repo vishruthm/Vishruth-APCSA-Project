@@ -12,7 +12,6 @@ public class Main implements Directions {
         // whatever you are coding, then add ClassName.main(args);
         // to run this code
 
-        Diamond.main(args);
 
     }
 }

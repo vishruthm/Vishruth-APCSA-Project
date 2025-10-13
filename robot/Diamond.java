@@ -19,99 +19,42 @@ public class Diamond implements Directions{
         // Want a second robot?  No prob.  They are cheap :)
         //Robot dude = new Robot(7,5,West,9);
         // examples of commands you can invoke on a Robot
-        rob.move();// move one step in the direction it is facing
-
-
-        // starting the letter R
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
+        // Draw the vertical line of R
+    for (int i = 0; i < 5; i++) {
         rob.putBeeper();
         rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.move();
-        rob.move();
-        // done with the line, now on the curve
-        // rob.turnLeft();
-
     }
+
+    // Draw the top horizontal line of R
+    rob.turnLeft(); // face East
+    for (int i = 0; i < 3; i++) {
+        rob.putBeeper();
+        rob.move();
+    }
+
+    // Draw the vertical part of the curve
+    rob.turnLeft(); // face North
+    rob.move();
+    rob.putBeeper();
+
+    // Draw the diagonal leg of R using simple repeated moves
+    rob.turnLeft(); // face West
+    rob.move();
+    rob.putBeeper();
+
+    rob.turnLeft(); // face South
+    rob.move();
+    rob.putBeeper();
+
+    rob.turnLeft(); // face East
+    rob.move();
+    rob.putBeeper();
+
+    rob.turnLeft(); // face North
+    rob.move();
+    rob.putBeeper();
+
+    // Optional: finish or move to next letter
+    rob.turnLeft();
 }
+} 
