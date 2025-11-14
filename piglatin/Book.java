@@ -66,7 +66,8 @@ public class Book {
             // Scanner(bookUrl.openStream())
             // use: text.add(line) to add a line to the book.
         } catch (IOException ex) {
-            ex.printStackTrace();
+            ex.pri
+            ntStackTrace();
         }
     }
 

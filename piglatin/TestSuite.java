@@ -3,7 +3,7 @@ package piglatin;
 public class TestSuite {
     // Run a bunch of basic tests on PigLatinTranslator
     public static int run() {
-        int score = 0;
+        int score = 0;  
         int total = 12;
 
         // Single Words

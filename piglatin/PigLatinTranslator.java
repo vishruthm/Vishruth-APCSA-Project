@@ -21,7 +21,7 @@ public class PigLatinTranslator {
         // The input to this function could be any English string.
         // It may be made up of many words.
         // This method must call translateWord once for each word in the string.
-        result = translateWord(input);
+        result = translateWord();
 
         return result;
     }
